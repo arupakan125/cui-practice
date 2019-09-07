@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lv1</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function check() {
+			var form = document.forms.flag;
+			if (form.flag.value == "FLAG{NEW_WORLD}") {
+				alert("正解！");
+				window.open("./lv2.html", '_blank');
+			} else {
+				alert("ちがう！");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<p>スーパーハッカーになるためのサイト</p>
+	</header>
+	<div class="container">
+		<div class="left-box">
+			<h1>Lv1. ファイルとフォルダの一覧を表示させてみよう！</h1>
+			<p>lsコマンドを使うと、ファイルとフォルダの一覧を表示することができるよ！</p>
+			<p>FLAGから始まるファイル名を下に入力しよう。</p>
+			<form name="flag" autocomplete="off">
+				<input name="flag" type="text" placeholder="FLAG{}">
+				<input type="submit" onclick="check()">
+			</form>
+			<div class="box26">
+				<span class="box-title">HINT</span>
+				<p>右側の黒い画面にlsと入力してエンターで実行だ！</p>
+				<p>FLAG{ほにゃらら}と書かれたファイルだよ！</p>
+			</div>
+		</div>
+		<div class="right-box">
+			<iframe width="100%" height="100%" src="https://cui.arupaka.net/lv1/"></iframe>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>

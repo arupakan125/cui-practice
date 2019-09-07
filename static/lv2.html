@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lv2</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function check() {
+			var form = document.forms.flag;
+			if (form.flag.value == "FLAG{03:07}") {
+				alert("正解！");
+				window.open("./lv3.html", '_blank');
+			} else {
+				alert("ちがう！");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<p>スーパーハッカーになるためのサイト</p>
+	</header>
+	<div class="container">
+		<div class="left-box">
+			<h1>Lv2. ファイルの情報をもっと詳しく見てみよう！</h1>
+			<p>lsコマンドの後にスペースを空けて-lと入力してエンターだ！</p>
+			<p>file3がいつ更新されたのか答えよう！</p>
+			<form name="flag" autocomplete="off">
+				<input name="flag" type="text" placeholder="FLAG{}">
+				<input type="submit" onclick="check()">
+			</form>
+			<div class="box26">
+				<span class="box-title">HINT</span>
+				<p>更新日時が9時45分ならFLAG{9:45}みたいに入力してね。</p>
+				<p>lは小文字のエルだよ。</p>
+				<p>ほとんどのコマンドはハイフンをつけるとコマンドの挙動がかわるんだ。これをオプションというよ。 </p>
+			</div>
+		</div>
+		<div class="right-box">
+			<iframe width="100%" height="100%" src="https://cui.arupaka.net/lv2/"></iframe>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>

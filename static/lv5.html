@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lv5</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function check() {
+			var form = document.forms.flag;
+			if (form.flag.value == "FLAG{/you/are/here}") {
+				alert("正解！");
+				window.open("./lv6.html", '_blank');
+			} else {
+				alert("ちがう！");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<p>スーパーハッカーになるためのサイト</p>
+	</header>
+	<div class="container">
+		<div class="left-box">
+			<h1>Lv5. 今いるフォルダの場所を確認してみよう！</h1>
+			<p>自分がいるフォルダはpwdコマンドで取得できるよ</p>
+			<p>pwdコマンドの結果をFLAG{}に入れてね！</p>
+			<form name="flag" autocomplete="off">
+				<input name="flag" type="text" placeholder="FLAG{}">
+				<input type="submit" onclick="check()">
+			</form>
+			<div class="box26">
+				<span class="box-title">HINT</span>
+				<p>FLAG{/こんな/形式に/なるよ}</p>
+			</div>
+		</div>
+		<div class="right-box">
+			<iframe width="100%" height="100%" src="https://cui.arupaka.net/lv5/"></iframe>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>

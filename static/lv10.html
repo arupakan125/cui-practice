@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lv10</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function check() {
+			window.open("./lv11.html", '_blank');
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<p>スーパーハッカーになるためのサイト</p>
+	</header>
+	<div class="container">
+		<div class="left-box">
+			<h1>Lv10. slコマンドをインストールしよう！</h1>
+			<p>今回のLinuxの環境では、aptコマンドを使ってソフトウェアをインストールできるよ！</p>
+			<p>①まずはslコマンドを実行して、実行できない事を確認しよう。</p>
+			<p><b># sl</b></p>
+			<p>②aptコマンドを実行してslコマンドを導入しよう。</p>
+			<p><b># apt install sl</b></p>
+			<p>③slコマンドが使えるようになったことを確認しよう。</p>
+			<p><b># sl</b></p>
+			<form name="flag" 　autocomplete="off">
+				<button type="button" onclick="check()">次へ</button>
+			</form>
+			<div class="box26">
+				<span class="box-title">TIPS</span>
+				<p>このソフトウェアを導入すると、lsコマンドを打ち間違えたときにとってもいらつく事ができるよ！</p>
+				<p>このコマンドはControll + Cでも<b>中断できない</b>んだ！！！！！</p>
+			</div>
+		</div>
+		<div class="right-box">
+			<iframe width="100%" height="100%" src="https://cui.arupaka.net/lv10/"></iframe>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+
+</html>
